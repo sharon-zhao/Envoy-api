@@ -20,8 +20,9 @@ router.post('/localfileupload', upload.single('file'), (req, res, next) => {
       //use the title from the input whose name is title
          // title:req.body.title,
          //backend response location can see from server run
-         imageUrl:responseData.Location,
+         imageUrl:responseData.Location
          // author: req.body.author
+         // videoUrl:responseData.Location,
        })
      })
      .then(upload => res.status(201).json({upload: upload.toObject()}))
