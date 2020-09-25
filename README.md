@@ -7,31 +7,20 @@ so they can share their content and interact with other posts from other users.
 
 -[Envoy Client](https://the-ga-honey-badgers.github.io/group-project-client/)
 
-## Planning Story
+## Demo
 
-As a group we chose to tackle the message board prompt and we decided to try
-and reproduce a simplistic version of a Reddit-like message board. We began our
-work on the project by building the backend Express API. As a group we decided
-to group code the mongoose models for the resources that we would need API
-routes for. Once we built the models to our satisfaction, we split up the work
-of creating CRUD routes for each respective resource. Once we had a fully
-tested and functioning backend we started brainstorming the React.js frontend.
+![](https://user-images.githubusercontent.com/62820094/94222803-5f09b580-febc-11ea-9108-ea1ee916e87c.png)
 
-We faced a few challenges when trying to populate a nested mongoose document and
-we were eventually able to resolve this as a group by reading the mongoose
-documentation and doing some trial and error. Another interesting challenge
-arose when the API was sending back a 500 status error when a user tried to
-change a resource that didn't belong to them. While we were getting the desired
-behavior on the front-end, we had to go back into our error_handler file and
-make sure that our custom OwnershipError was included in the errors which would
-return a status 401 unauthorized.
+![](https://user-images.githubusercontent.com/62820094/94223436-f4597980-febd-11ea-8c31-275d027d6b61.png)
+- This app likes Reddit you can view various post there and comment on others posts.
 
-The biggest challenge and learning point from this project was understanding
-how to effectively work together in a group and how to manage a common repo to
-which we were all contributing on a daily basis. While we had to inevitably go
-on a few LONG tangents as a group in order to solve merge conflicts in our local
-repos we were able to work well as a unit and this is reflected in the final
-product for this project.
+![](https://user-images.githubusercontent.com/62820094/94223078-0981d880-febd-11ea-85c2-c46cf4f332e4.png)
+
+![](https://user-images.githubusercontent.com/62820094/94223085-0dadf600-febd-11ea-8f36-a41b4c5253a6.png)
+- You can create your own post share your idea with others. The image was stored in AWS S3.
+
+![](https://user-images.githubusercontent.com/62820094/94222932-b1e36d00-febc-11ea-8942-cc9adba867a5.png)
+- You can share the post to your social media.
 
 ### User Stories
 
@@ -54,17 +43,8 @@ product for this project.
 - Express.js
 - MongoDB
 - Mongoose
-- Heroku
+- AWS
 
-### Unsolved Problems/Future Updates
-
-- Would like to eventually add a current news API integration with a carousel
-of latest news.
-- Would like to eventually add a spell check feature.
-- Would like to eventually add the functionality to like posts and rank posts
-based on number of likes.
-- Would like to eventually allow users to add tags to posts and categorize their
-posts.
 
 #### Wireframe and ERD
 
